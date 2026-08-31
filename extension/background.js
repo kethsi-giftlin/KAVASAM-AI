@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener(()=>{chrome.contextMenus.create({id:'kavasam-check',title:'Check with Kavasam AI',contexts:['selection','link']});});chrome.contextMenus.onClicked.addListener((info)=>{const text=info.selectionText||info.linkUrl||'';chrome.storage.local.set({pendingText:text});chrome.tabs.create({url:'http://localhost:5173/?fromExtension=true'});});

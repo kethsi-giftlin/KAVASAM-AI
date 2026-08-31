@@ -1,319 +1,146 @@
-# 🛡️ KAVASAM AI
-
-### AI-Powered Cybersecurity Awareness Browser Extension
-
-> **Detect. Understand. Act Safely.**
-
-Kavasam AI is an AI-powered cybersecurity awareness platform designed to help everyday users identify, understand, and respond to online cyber threats.
-
-The **browser extension is the core product**. It brings cybersecurity assistance directly into the user's browsing experience, allowing suspicious content to be analyzed without requiring the user to leave the webpage.
-
----
-
-## 🚨 Problem
-
-As digital usage increases, users are constantly exposed to phishing messages, suspicious links, fake websites, malicious content, and other cyber threats.
-
-The major problem is not only detecting these threats — it is helping ordinary users **understand what is dangerous and what they should do next**.
-
-Many existing cybersecurity tools provide technical warnings that can be difficult for beginners to understand.
-
----
-
-## 💡 Solution
-
-Kavasam AI acts as an intelligent cybersecurity assistant inside the browser.
-
-When a user encounters suspicious content, they can use the Kavasam AI extension to analyze it.
-
-### Core workflow
-
-```text
-Suspicious Content
-        ↓
-Kavasam AI Browser Extension
-        ↓
-AI-Powered Analysis
-        ↓
-Risk Identification
-        ↓
-Simple Explanation
-        ↓
-Recommended Action
-```
-
-Instead of simply saying **"Dangerous"**, Kavasam AI helps the user understand:
-
-* What the potential threat is
-* Why it may be dangerous
-* How serious the risk is
-* What action the user should take
-
----
-
-# ✨ Key Features
-
-### 🛡️ AI Cybersecurity Analyzer
-
-Analyze suspicious messages, links, and online content.
-
-### ⚠️ Risk Detection
-
-Identify potentially unsafe or suspicious content and communicate the risk clearly.
-
-### 💡 Simple Threat Explanation
-
-Convert complex cybersecurity analysis into understandable guidance for non-technical users.
-
-### ✅ Recommended Action
-
-Provide practical next steps so users can make safer decisions.
-
-### 🔐 Password Security Guidance
-
-Help users understand password strength and improve their security practices.
-
-### 🤖 Cybersecurity Assistant
-
-Provide beginner-friendly cybersecurity guidance through an AI-powered conversational interface.
-
----
-
-# 🧩 Browser Extension
-
-The **Kavasam AI browser extension is the primary interface of the project.**
-
-It is designed to work directly where users encounter online threats.
-
-### Extension Flow
-
-```text
-User encounters suspicious content
-                ↓
-       Opens Kavasam AI
-                ↓
-          Content is analyzed
-                ↓
-       AI identifies the risk
-                ↓
-      Risk + explanation shown
-                ↓
-       Safer action suggested
-```
-
----
-
-# 🎥 Demo
-
-
-# 🏗️ System Architecture
-
-```text
-                    USER
-                      │
-                      ▼
-          ┌─────────────────────┐
-          │ Kavasam AI Browser  │
-          │      Extension      │
-          └──────────┬──────────┘
-                     │
-                     ▼
-          ┌─────────────────────┐
-          │ Input / Content /   │
-          │ URL Analysis        │
-          └──────────┬──────────┘
-                     │
-                     ▼
-          ┌─────────────────────┐
-          │ AI Analysis Engine  │
-          └──────────┬──────────┘
-                     │
-              ┌──────┴──────┐
-              ▼             ▼
-       Threat Analysis   Risk Score
-              │             │
-              └──────┬──────┘
-                     ▼
-          ┌─────────────────────┐
-          │ Simple Explanation  │
-          └──────────┬──────────┘
-                     │
-                     ▼
-          ┌─────────────────────┐
-          │ Recommended Action  │
-          └─────────────────────┘
-```
-
----
-
-# 💻 Technology Stack
-
-### Browser Extension
-
-* HTML
-* CSS
-* JavaScript
-* Chrome Extension APIs
-
-### Backend
-
-* Python
-* FastAPI
-
-### AI
-
-* AI/NLP-based analysis
-* Cybersecurity risk assessment
-* Threat classification and explanation
-
-### Development
-
-* IBM Bob
-* GitHub
-* VS Code / Development tools
-
----
-
-# 🤖 IBM Bob
-
-IBM Bob was used as an **AI-assisted development partner** during the development of Kavasam AI.
-
-It supported activities including:
-
-* Project architecture and planning
-* Browser extension development
-* Frontend implementation
-* Backend/API development
-* Debugging
-* Error analysis
-* Code refinement
-* Integration between components
-* Documentation
-
-The development process was iterative:
-
-```text
-Idea
- ↓
-Architecture
- ↓
-AI-Assisted Development with IBM Bob
- ↓
-Implementation
- ↓
-Testing
- ↓
-Debugging
- ↓
-Refinement
- ↓
-Working Prototype
-```
-
-
-
-# 📁 Repository Structure
-
-```text
-KAVASAM-AI/
-│
-├── extension/              # Core browser extension
-├── backend/                # Backend/API services
-├── web/                    # Web platform
-│
-├── demo/
-│   └── screenshots/        # Product screenshots
-│
-├── README.md
-├── IBM_BOB_USAGE.md        # IBM Bob usage documentation
-├── requirements.txt
-└── .gitignore
-```
-
----
-
-# 🚀 Running the Project
-
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/kethsi-giftlinsvg/KAVASAM-AI.git
-cd KAVASAM-AI
-```
-
-## 2. Run the backend
-
-```bash
-cd backend
-```
-
-Create and activate a Python virtual environment, then install the required dependencies:
-
-```bash
+# Kavasam AI — Submission-Ready Full Product
+
+**Your AI Companion for Safer Digital Life**
+
+This is a complete, self-contained academic/demo product designed to be runnable locally today. It combines:
+
+- React/Vite web application
+- FastAPI REST backend
+- SQLite persistence
+- Registration/login with salted password hashing
+- Hybrid phishing detector: rules + TF-IDF/Logistic Regression
+- URL risk analysis
+- Explainable WHAT / WHY / WHAT NOW output
+- Detection history
+- Cyber awareness score and recommendations
+- Cyber Mentor
+- Learning Center
+- Scenario quiz and progress
+- Local password-strength advisor (password text never sent to backend)
+- Chromium Manifest V3 extension
+- Simulated phishing demonstration page
+- Health/API documentation
+
+> **Important:** This is submission-ready for an academic demonstration and local deployment. A public production launch would still require professional security review, a larger validated dataset, HTTPS deployment, secret management, monitoring, rate limiting, privacy/legal review, and penetration testing.
+
+## Requirements
+
+- Windows 10/11
+- Python 3.11+
+- Node.js 20+
+- Chrome or Edge
+- VS Code recommended
+
+## QUICK START — Windows
+
+### Terminal 1 — Backend
+
+```powershell
+cd Kavasam-AI-Full\backend
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+uvicorn app.main:app --reload
 ```
 
-Start the backend:
+Backend: http://127.0.0.1:8000
+API docs: http://127.0.0.1:8000/docs
 
-```bash
-uvicorn main:app --reload
+If PowerShell blocks activation:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
 ```
 
-## 3. Load the browser extension
+### Terminal 2 — Frontend
 
-1. Open Google Chrome.
-2. Go to:
-
-```text
-chrome://extensions/
+```powershell
+cd Kavasam-AI-Full\frontend
+npm install
+npm run dev
 ```
 
-3. Enable **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the `extension` folder.
-6. Pin **Kavasam AI** to the Chrome toolbar.
-7. Click the extension icon to use it.
+Open the Vite URL, normally http://localhost:5173
 
-> Configuration requirements may vary depending on the final implementation.
+### Chrome extension
 
----
+1. Open chrome://extensions
+2. Enable Developer mode
+3. Load unpacked
+4. Select the `extension` folder
+5. Pin Kavasam AI
 
-# 🎯 Impact
+### Demo page
 
-Kavasam AI is designed to make cybersecurity more accessible to everyday users.
+Open `demo/phishing-demo.html` in Chrome. It is clearly labeled as a simulation.
 
-The goal is to move cybersecurity from:
+## First-use flow
 
-**Complex warnings → Simple understanding → Safer decisions**
+1. Register a new account.
+2. Login.
+3. Open Dashboard.
+4. Use Is This Safe? with the sample phishing message.
+5. Check the generated explanation and history.
+6. Ask Cyber Mentor a question.
+7. Complete a lesson/quiz.
+8. Open Password Advisor and test a password locally.
+9. Test the browser extension.
 
-By providing assistance directly inside the browser, Kavasam AI can help users recognize threats at the moment they encounter them.
+## Sample phishing text
 
----
+URGENT! Your bank account will be blocked today. Verify your account immediately and send your OTP.
 
-# 🔮 Future Scope
+## Architecture
 
-Future versions can expand Kavasam AI with:
+Browser/Extension → FastAPI → Authentication/SQLite → Hybrid Risk Engine → Explainability → History/Awareness → Learning/Quiz
 
-* Real-time phishing detection
-* Malicious URL intelligence
-* Website trust scoring
-* Multilingual cybersecurity explanations
-* Personalized security recommendations
-* Expanded threat intelligence integration
-* Enterprise security awareness features
+## Security notes
 
----
+- Passwords are hashed with PBKDF2-HMAC-SHA256 and random salts.
+- Password advisor uses only local browser-side checks.
+- Authentication tokens are short-lived signed JWTs.
+- API input is validated with Pydantic.
+- CORS is restricted to local development origins.
+- Demo pages never request or transmit real credentials.
 
-# 👥 Team
+## Test commands
 
-### Kavasam AI
+Backend:
 
-**IBM SkillsBuild Hackathon 2026**
+```powershell
+cd backend
+.\venv\Scripts\Activate.ps1
+pytest -q
+```
 
-**Domain:** Artificial Intelligence + Cybersecurity
+Frontend build:
 
----
+```powershell
+cd frontend
+npm run build
+```
 
-## 🛡️ Our Vision
+## 4-minute video script
 
-> **Don't just detect the threat. Help the user understand it.**
+**0:00–0:25** Problem + Kavasam introduction.
+
+**0:25–0:55** Dashboard: awareness score, detections, learning progress.
+
+**0:55–1:35** Is This Safe?: paste phishing message, show score and WHAT/WHY/WHAT NOW.
+
+**1:35–2:00** History: show saved analysis.
+
+**2:00–2:25** Cyber Mentor: ask “What is phishing?”
+
+**2:25–2:45** Learning + Quiz: complete scenario.
+
+**2:45–3:10** Password Advisor: demonstrate local strength feedback; explain password is not uploaded.
+
+**3:10–3:45** Browser extension + simulated phishing page + right-click analysis.
+
+**3:45–4:00** Close on: DETECT → EXPLAIN → EDUCATE → IMPROVE.
+
+## What to say if asked “Is this really AI?”
+
+“Kavasam uses a hybrid architecture. A transparent rule engine captures interpretable security indicators, while a lightweight TF-IDF plus Logistic Regression classifier adds a machine-learning signal. The final risk score combines those signals and generates an explanation. The architecture is intentionally lightweight for fast response and low-resource environments.”
